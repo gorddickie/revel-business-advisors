@@ -227,15 +227,16 @@
     .headshot-placeholder {
       width: 160px;
       height: 180px;
-      background: linear-gradient(135deg, #d0d8e4, #b0bcc9);
       border-radius: 8px;
       margin: 0 auto 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 13px;
-      color: #7a8a9a;
-      font-style: italic;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .headshot-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
     }
     .profile-name {
       font-size: 20px;
@@ -412,7 +413,7 @@
       </div>
 
       <div class="profile-card" id="contact">
-        <div class="headshot-placeholder">[ Mark Lever ]</div>
+        <div class="headshot-placeholder"><img src="mark-lever.jpg" alt="Mark Lever" /></div>
         <div class="profile-name">Mark Lever</div>
         <div class="profile-title">Business Advisor</div>
         <ul class="contact-list">
